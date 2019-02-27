@@ -3,6 +3,8 @@ import "./Home.css";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
 import Saved from "../Saved/Saved";
+import Login from "../Login/Login";
+import Registration from "../Registration/Registration"
 
 class Home extends Component {
 
@@ -18,6 +20,8 @@ class Home extends Component {
                 <RoomSearch />
                 <Results />
                 <Saved />
+                <Login />
+                <Registration />
             </div>
         );
     }
