@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "Room": "RoomNumber",
+        "link": "#",
+        "preview": "EducationRoom"
+    },
+    {
+        "id": 2,
+        "Room": "RoomNumber",
+        "link": "#",
+        "preview": "Bathroom"
+    }
+   
+]

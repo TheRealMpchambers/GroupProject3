@@ -1,0 +1,20 @@
+.container .card {
+    background: #fff;
+    border-radius: 2px;
+    height: 325px;
+    margin: 4rem;
+    margin-top: 2rem;
+    position: relative;
+    width: 800px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    text-align: center;
+    flex-direction: row;
+  }
+  .card {
+    flex-direction: row;
+    flex: 1;
+    overflow: auto;
+  }
+  .list-group {
+    margin: 2rem;
+  }
