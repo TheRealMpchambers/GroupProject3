@@ -11,7 +11,8 @@ class App extends Component {
   loadData = () => {
     API.getDirections()
     .then(res => console.log(res))
-  };
+    .catch(err => console.log(err))
+};
 
   render() {
     return (

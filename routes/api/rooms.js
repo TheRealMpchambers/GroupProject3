@@ -1,16 +1,8 @@
 const router = require("express").Router();
-const db = require("../../models");
+const roomController = require("../../controllers/roomController")
 
 router.route("/")
-.get(
-    db.Room.find({})
-    .then(dbModel => res.json(dbModel))
-    .catch(err => console.log(err))
-    )
-.post(
-    db.Room.create(req.body)
-    .then(dbModel => res.json(dbModel))
-    .catch(err => console.log(err))
-    );
+    .get(roomController.getRooms)
+    .post(roomController.createRoom);
 
 module.exports = router;
