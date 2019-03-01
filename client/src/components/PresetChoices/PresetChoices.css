@@ -1,0 +1,23 @@
+.buttontron {
+    width: 95%;
+    height: 55px;
+    border: solid 1px #640212 !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 15px;
+    color: #640212;  
+    margin-bottom: 12px;
+}
+.buttontron:hover {
+    Background-color: #640212a2;
+    color: white;
+    cursor: pointer;
+}
+.buttonDiv {
+    width: 100%;
+}
+.grayText {
+    color: #666666;
+}
+

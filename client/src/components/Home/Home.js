@@ -4,7 +4,8 @@ import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
 import Saved from "../Saved/Saved";
 import Login from "../Login/Login";
-import Registration from "../Registration/Registration"
+import Registration from "../Registration/Registration";
+import PresetChoices from "../PresetChoices/PresetChoices";
 
 class Home extends Component {
 
@@ -13,11 +14,12 @@ class Home extends Component {
             <div className="App">
                 <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="display-4">Name Holder</h1>
-                    <p class="lead">Smaller test for some coold sentence.</p>
+                    <p class="lead">Hey there!</p>
+                    <p class="lead">Let's get you where you need to go.</p>
                 </div>
                 </div>
                 <RoomSearch />
+                <PresetChoices/>
                 <Results />
                 <Saved />
                 <Login />

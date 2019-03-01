@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from 'react-bootstrap';
+import { Button, FormGroup, FormControl } from 'react-bootstrap';
 import "./RoomSearch.css";
 
 class RoomSearch extends Component {
@@ -34,37 +34,30 @@ class RoomSearch extends Component {
     
     render () {
         return(
-            <div className="container">
-               <div className="card">
-                    <div class="card-header">
-                        Search
-                    </div>
-                    <div className="card-body searchCard">
-                        <blockquote class="blockquote mb-0">
-                        <p>Room Search Box</p>
-                            <form onSubmit={this.handleSubmit}>
+                    <div className="jumbotron jumbotronsearch searchCard">
+                    <h1 className="title1">Search by room number</h1>
+                            <form className="form" onSubmit={this.handleSubmit}>
                                 <FormGroup controlId="searchInput" bsSize="large">
-                                    <FormLabel>Room Search</FormLabel>
-                                    <FormControl
-                                        autoFocus
-                                        type="searchInput"
-                                        value={this.state.searchInput}
-                                        onChange={this.handleChange}
-                                    />
+                                    <div className="inputDiv">
+                                        <FormControl
+                                            autoFocus
+                                            type="searchInput"
+                                            value={this.state.searchInput}
+                                            onChange={this.handleChange}
+                                        />
+                                        <Button
+                                            className="enterButton"
+                                            block
+                                            bsSize="large"
+                                            disabled={!this.validateForm()}
+                                            type="submit"
+                                        >
+                                        Enter
+                                        </Button>
+                                    </div>
                                 </FormGroup>
-                                <Button
-                                    block
-                                    bsSize="large"
-                                    disabled={!this.validateForm()}
-                                    type="submit"
-                                >
-                                    Search
-                                </Button>
                             </form>
-                        </blockquote>
                     </div>
-                </div>
-            </div>
         );
     }
 }
