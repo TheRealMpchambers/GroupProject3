@@ -15,7 +15,7 @@ class Home extends Component {
 
         this.state = {
             searchInput: "",
-            results: []
+            results: ""
         };
      
     }
@@ -55,18 +55,6 @@ class Home extends Component {
 
     render () {
 
-        var searchResults = this.state.results.map((result) => 
-        
-        <Results 
-                destintaion ={result.destination}
-                map = {result.map}
-                direOne = {result.direOne}
-                dirTwo = {result.dirTwo}
-                dirThree = {result.dirThree}
-                direFour = {result.dirFour}/>
-        
-        )
-
         return (
             <div className="App">
                 <div class="jumbotron jumbotron-fluid">
@@ -82,7 +70,13 @@ class Home extends Component {
                 validateForm = {this.validateForm}/>
                 <PresetChoices/>
                 <div>
-                    {searchResults}
+                <Results 
+                destination ={this.state.results !== "" ? this.state.results.destination : null}
+                map = {this.state.results !== "" ? this.state.results.map : null}
+                dirOne = {this.state.results !== "" ? this.state.results.dirOne : null}
+                dirTwo = {this.state.results !== "" ? this.state.results.dirTwo : null}
+                dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
+                direFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
                 <Saved />
                 <Login />

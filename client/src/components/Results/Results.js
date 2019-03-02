@@ -28,11 +28,11 @@ class Results extends Component {
                 </div>
                 <br></br>
                 <img src={this.props.map} alt="map to destination"/>
-                </div>
-                <div>{this.props.direOne}</div>
+                <div>{this.props.dirOne}</div>
                 <div>{this.props.dirTwo !== "" ? this.props.dirTwo : null}</div>
                 <div>{this.props.dirThree !== "" ? this.props.dirThree : null}</div>
                 <div>{this.props.dirFour !== "" ? this.props.dirFour : null}</div>
+                </div>
             </div>
         );
     }
