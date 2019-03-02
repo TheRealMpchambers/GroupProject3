@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import "./Home.css";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
-import Saved from "../Saved/Saved";
 import Login from "../Login/Login";
-import Registration from "../Registration/Registration";
 import PresetChoices from "../PresetChoices/PresetChoices";
 import API from '../../utils/API';
 
@@ -76,11 +74,9 @@ class Home extends Component {
                 dirOne = {this.state.results !== "" ? this.state.results.dirOne : null}
                 dirTwo = {this.state.results !== "" ? this.state.results.dirTwo : null}
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
-                direFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
+                dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
-                <Saved />
                 <Login />
-                <Registration />
             </div>
         );
     }
