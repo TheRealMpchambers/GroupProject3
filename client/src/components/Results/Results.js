@@ -9,28 +9,14 @@ class Results extends Component {
     
     render () {
         return(
+
             <div className="container">
-               <div class="card">
-                    {/* <div class="card-header">
-                        Search Results
-                    </div> */}
-                    {/* {this.state.trips.map(trips => (
-                        <Resultscard
-                            id={trips.id}
-                            title={trips.Room}
-                        />
-                    ))} */}
-                <br></br>
-                <div className="results-heading"> 
-                    <h1 style={styles}>Directions to {this.props.destination}</h1>
-                </div>
-                <br></br>
-                <img src={this.props.map} alt="map to destination"/>
-                <div>{this.props.dirOne}</div>
-                <div>{this.props.dirTwo !== "" ? this.props.dirTwo : null}</div>
-                <div>{this.props.dirThree !== "" ? this.props.dirThree : null}</div>
-                <div>{this.props.dirFour !== "" ? this.props.dirFour : null}</div>
-                </div>
+                <div> 1. {this.props.dirOne}</div>
+                <div>2. {this.props.dirTwo !== "" ? this.props.dirTwo : null}</div>
+                <div>3. {this.props.dirThree !== "" ? this.props.dirThree : null}</div>
+                <div> {this.props.dirFour !== "" ? this.props.dirFour : null}</div>
+                <img className="mapImg" src={this.props.map} alt="map to destination"/>
+                <iframe title="tour" width="100%" height="480px" src="https://poly.google.com/view/70BjwBf6Q2F/embed?chrome=min" frameborder="0" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" ></iframe>
             </div>
         );
     }
