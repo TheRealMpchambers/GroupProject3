@@ -2,8 +2,8 @@ import axios from "axios";
 
 export default {
 
-    getDirections: function() {
-        return axios.get("/api/rooms");
+    getDirections: function(query) {
+        return axios.get("/api/rooms/" + query);
     },
 
     saveDirections: function(directions) {

@@ -8,47 +8,47 @@ mongoose.connect(
 
 const roomSeed = [
 	{
-		destination: "Room 32",
+		destination: "Room_32",
 		map: "https://i.imgur.com/QXHSWtC.png",
 		dirOne: "Turn left at the first set of doors down the hallway",
 		dirTwo: "Walk down the stairs ",
 		dirThree: "Your destination is the first door on the left"
 	},
 	{
-		destination: "Men’s restroom",
+		destination: "Men’s_restroom",
 		map: "https://i.imgur.com/9nbfEGv.png",
 		dirOne: "Turn left at the first set of doors down the hallway",
 		dirTwo: "Your destination is the first door on the right"
 	},
 	{
-		destination: "Women’s restroom",
+		destination: "Women’s_restroom",
 		map: "https://i.imgur.com/L4qSar6.png",
 		dirOne: "Turn left at the first set of doors down the hallway",
 		dirTwo: "Take a right inside the doors",
 		dirThree: "Your destination is left of the stairs at the end of the hallway"
 	},
 	{
-		destination: "Room 83",
+		destination: "Room_83",
 		map: "https://i.imgur.com/TMexXIA.png",
 		dirOne: "Turn left at the second set of doors down the hallway",
 		dirTwo: "Your destination is inside the door on the right"
 	},
 	{
-		destination: "Vending machines",
+		destination: "Vending_machines",
 		map: "https://i.imgur.com/hOQwy0Y.png",
 		dirOne: "Turn left at the second set of doors down the hallway",
 		dirTwo: "Walk down the ramp inside the doors",
 		dirThree: "Your destination is on the right"
 	},
 	{
-		destination: "Room 62",
+		destination: "Room_62",
 		map: "https://i.imgur.com/mrKilXT.png",
 		dirOne: "Turn left at the second set of doors down the hallway",
 		dirTwo: "Walk down the ramp inside the doors",
 		dirThree: "Your destination is on the right"
 	},
 	{
-		destination: "Room 55",
+		destination: "Room_55",
 		map: "https://i.imgur.com/NPDDwV3.png",
 		dirOne: "Turn left at the second set of doors down the hallway",
 		dirTwo: "Walk down the ramp inside the doors",
@@ -56,7 +56,7 @@ const roomSeed = [
 		dirFour: "Your destination is the last door on the right"
 	},
 	{
-		destination: "Room 52",
+		destination: "Room_52",
 		map: "https://i.imgur.com/vRGyvUA.png",
 		dirOne: "Turn left at the second set of doors down the hallway",
 		dirTwo: "Walk down the ramp inside the doors",
@@ -64,7 +64,7 @@ const roomSeed = [
 		dirFour: "Your destination is the last door on the left"
 	},
 	{
-		destination: "Room 42A",
+		destination: "Room_42A",
 		map: "https://i.imgur.com/vhuWuIg.png",
 		dirOne: "Turn left at the first set of doors down the hallway",
 		dirTwo: "Walk down the stairs and continue down the hallway",
@@ -72,7 +72,7 @@ const roomSeed = [
 		dirFour: "Your destination is the first door on the left"
 	},
 	{
-		destination: "Room 42B",
+		destination: "Room_42B",
 		map: "https://i.imgur.com/eMtMew0.png",
 		dirOne: "Turn left at the first set of doors down the hallway",
 		dirTwo: "Walk down the stairs and continue down the hallway",
@@ -80,7 +80,7 @@ const roomSeed = [
 		dirFour: "Your destination is at the end of the hallway"
 	},
 	{
-		destination: "Room 77",
+		destination: "Room_77",
 		map: "https://i.imgur.com/XD3qygk.png",
 		dirOne: "Turn left at the second set of doors down the hallway",
 		dirTwo: "Your destination is directly right inside the door"
