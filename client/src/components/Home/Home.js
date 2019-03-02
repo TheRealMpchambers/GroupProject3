@@ -6,6 +6,7 @@ import Saved from "../Saved/Saved";
 import Login from "../Login/Login";
 import Registration from "../Registration/Registration";
 import PresetChoices from "../PresetChoices/PresetChoices";
+import API from '../../utils/API';
 
 class Home extends Component {
 
@@ -13,9 +14,10 @@ class Home extends Component {
         super(props);
 
         this.state = {
-            searchInput: ""
+            searchInput: "",
+            results: []
         };
-        
+     
     }
 
      //makes sure something is entered in the form fields
@@ -35,9 +37,36 @@ class Home extends Component {
     handleSubmit = event => {
         event.preventDefault();
         console.log(this.state.searchInput);
+        var query = this.state.searchInput;
+        if ((query.indexOf(" ")) > -1) {
+            query = query.replace(/\s/g, "_")
+      };
+        console.log("The query is " + query);
+        API.getDirections(query)
+        .then(res => {
+            this.setState({
+                results: res.data})
+        })
+    }
+
+    componentDidUpdate() {
+        console.log(this.state)
     }
 
     render () {
+
+        var searchResults = this.state.results.map((result) => 
+        
+        <Results 
+                destintaion ={result.destination}
+                map = {result.map}
+                direOne = {result.direOne}
+                dirTwo = {result.dirTwo}
+                dirThree = {result.dirThree}
+                direFour = {result.dirFour}/>
+        
+        )
+
         return (
             <div className="App">
                 <div class="jumbotron jumbotron-fluid">
@@ -52,7 +81,9 @@ class Home extends Component {
                 handleChange = {this.handleChange}
                 validateForm = {this.validateForm}/>
                 <PresetChoices/>
-                <Results />
+                <div>
+                    {searchResults}
+                </div>
                 <Saved />
                 <Login />
                 <Registration />

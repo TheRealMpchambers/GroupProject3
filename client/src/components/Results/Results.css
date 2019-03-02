@@ -18,3 +18,7 @@
   .list-group {
     margin: 2rem;
   }
+
+  .results-heading {
+    text-align: center;
+  }

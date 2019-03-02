@@ -3,10 +3,14 @@ const db = require("../models");
 module.exports = {
 
     getRooms: function(req, res) {
+        console.log(req);
         db.Room
-        .find(req.query)  
-        .then(dbModel => res.json(dbModel))
-        .catch(err => res.status(422).json(err));
+        .findOne({"destination": req.params.query}, function(err, result){
+            if (err) {console.log(err)};
+            res.json(result); 
+        })  
+        // .then(dbModel => res.json(dbModel))
+        // .catch(err => res.status(422).json(err));
     },
 
     createRoom: function(req, res) {
