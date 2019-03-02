@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import trips from "../../trips.json"
-import Resultscard from "../Resultscard/Resultscard.js"
 import styles from "./Results.css";
 
 

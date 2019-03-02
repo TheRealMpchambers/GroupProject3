@@ -5,32 +5,8 @@ import "./RoomSearch.css";
 class RoomSearch extends Component {
     constructor(props) {
         super(props);
-
-    //     this.state = {
-    //         searchInput: ""
-    //     };
-        
-    //     this.handleChange = this.handleChange.bind(this);
     }
 
-    //makes sure something is entered in the form fields
-
-    // validateForm() {
-    //     return this.state.searchInput.length > 0;
-    // }
-
-    // //listenes for any changes in the form fields
-
-    // handleChange = event => {
-    //     this.setState({
-    //         [event.target.id]: event.target.value
-    //     });
-    // }
-    
-    // handleSubmit = event => {
-    //     event.preventDefault();
-    //     console.log(this.state.searchInput);
-    // }
     
     render () {
         return(
