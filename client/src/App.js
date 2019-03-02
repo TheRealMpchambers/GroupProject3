@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import API from './utils/API';
-<<<<<<< Updated upstream
 // import ContactUs from "./components/ContactUs";
 import Home from "./components/Home";
 // import Login from "./components/Login";
@@ -20,13 +19,12 @@ class App extends Component {
 
   loadData = () => {
     API.getDirections()
-    .then(res => console.log(res))
+    .then(res => console.log(res.data))
     .catch(err => console.log(err))
 };
 
   render() {
     return (
-<<<<<<< Updated upstream
       // <div className="App">
       //  <p>testing</p>
       // </div>

@@ -3,6 +3,6 @@ const roomController = require("../../controllers/roomController")
 
 router.route("/")
     .get(roomController.getRooms)
-    .post(roomController.createRoom);
+    // .post(roomController.createRoom);
 
 module.exports = router;

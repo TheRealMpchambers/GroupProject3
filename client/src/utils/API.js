@@ -6,8 +6,12 @@ export default {
         return axios.get("/api/rooms");
     },
 
-    saveDirections: function(directions) {
-        return axios.post("/api/rooms", directions)
+    getSearches: function() {
+        return axios.get("/api/searches")
+    },
+
+    submitSearch: function(search) {
+        return axios.post("/api/searches", search)
     }
 
 };
