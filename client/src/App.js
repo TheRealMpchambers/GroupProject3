@@ -11,9 +11,6 @@ import Home from "./components/Home";
 // import RoomSearch from "./components/RoomSearch";
 // import Saved from "./components/Saved";
 // import Savedcard from "./components/Savedcard";
-=======
-import Home from "./components/Home"
->>>>>>> Stashed changes
 
 class App extends Component {
 
@@ -35,11 +32,6 @@ class App extends Component {
       // </div>
       <div>
       <Home/>
-=======
-      <div className="App">
-       <p>testing</p>
-       <Home />
->>>>>>> Stashed changes
       </div>
     );
   }
