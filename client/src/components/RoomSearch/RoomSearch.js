@@ -3,10 +3,6 @@ import { Button, FormGroup, FormControl } from 'react-bootstrap';
 import "./RoomSearch.css";
 
 class RoomSearch extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     
     render () {
         return(

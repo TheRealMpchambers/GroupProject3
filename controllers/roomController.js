@@ -3,7 +3,6 @@ const db = require("../models");
 module.exports = {
 
     getRooms: function(req, res) {
-        console.log(req);
         db.Room
         .findOne({"destination": req.params.query}, function(err, result){
             if (err) {console.log(err)};
