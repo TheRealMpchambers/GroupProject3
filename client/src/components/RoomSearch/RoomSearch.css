@@ -6,14 +6,15 @@
 .enterButton {
   float: left;
   width: 25%;
-  background-color: #840017 !important;
-  border: #840017 !important;
+  background-color: #640212ad !important;
+  border: solid 1px #640212ad !important;
   margin-top: 0px;
   height: 38px;
+  border: none;
 }
 .enterButton:hover {
-  background-color: #640212 !important;
-  border: #640212 !important;
+  background-color: white !important;
+  color: #640212ad !important;
 }
 #searchInput {
   width: 60%;
