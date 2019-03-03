@@ -16,12 +16,21 @@
   background-color: white !important;
   color: #640212ad !important;
 }
+.enterButton:focus {
+  box-shadow: none !important;
+}
 #searchInput {
   width: 60%;
   margin-right: 5%;
   float: left;
   margin-top: 0px;
   margin-left: 5%;
+  background-color: white !important;
+}
+#searchInput:focus {
+border: solid 1px #640212 !important;
+box-shadow: none !important;
+background-color: white !important;
 }
 .form-group {
   height: 90px;

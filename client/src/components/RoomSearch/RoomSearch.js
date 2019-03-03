@@ -12,7 +12,7 @@ class RoomSearch extends Component {
         return(
                     <div className="jumbotron jumbotronsearch searchCard">
                     <h1 className="title1">Search by room number</h1>
-                            <form className="form" onSubmit={this.props.handleSubmit}>
+                            <form autocomplete="off" className="form" onSubmit={this.props.handleSubmit}>
                                 <FormGroup controlId="searchInput" bsSize="large">
                                     <div className="inputDiv">
                                         <FormControl

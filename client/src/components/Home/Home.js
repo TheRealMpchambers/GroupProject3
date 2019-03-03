@@ -68,6 +68,7 @@ class Home extends Component {
                 validateForm = {this.validateForm}/>
                 <PresetChoices/>
                 <div>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
                 map = {this.state.results !== "" ? this.state.results.map : null}
@@ -76,6 +77,7 @@ class Home extends Component {
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
                 direFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Login />
             </div>
         );
