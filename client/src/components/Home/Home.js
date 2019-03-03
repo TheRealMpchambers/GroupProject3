@@ -75,7 +75,7 @@ class Home extends Component {
                 dirOne = {this.state.results !== "" ? this.state.results.dirOne : null}
                 dirTwo = {this.state.results !== "" ? this.state.results.dirTwo : null}
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
-                direFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
+                dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Login />
