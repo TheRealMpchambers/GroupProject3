@@ -37,7 +37,7 @@ class Home extends Component {
         console.log(this.state.searchInput);
         var query = this.state.searchInput;
         if ((query.indexOf(" ")) > -1) {
-            // query = query.replace(/\s/g, "_")
+            query = query.replace(/\s/g, "_")
       };
         console.log("The query is " + query);
         API.getDirections(query)
