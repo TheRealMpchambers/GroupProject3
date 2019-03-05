@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import API from './utils/API';
+// import API from './utils/API';
 
 // import ContactUs from "./components/ContactUs";
 import Home from "./components/Home";
@@ -30,7 +30,7 @@ class App extends Component {
       //  <p>testing</p>
       // </div>
       <div>
-      <Home/>
+      <Home />
       </div>
     );
   }

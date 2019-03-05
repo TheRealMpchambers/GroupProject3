@@ -3,7 +3,6 @@ import "./Home.css";
 import Header1 from "../Header1/Header1";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
-import Login from "../Login/Login";
 import PresetChoices from "../PresetChoices/PresetChoices";
 import API from '../../utils/API';
 
@@ -38,13 +37,31 @@ class Home extends Component {
         console.log(this.state.searchInput);
         var query = this.state.searchInput;
         if ((query.indexOf(" ")) > -1) {
-            query = query.replace(/\s/g, "_")
+            // query = query.replace(/\s/g, "_")
       };
         console.log("The query is " + query);
         API.getDirections(query)
         .then(res => {
             this.setState({
                 results: res.data})
+        })
+    }
+
+    presetSubmit = event => {
+        event.preventDefault();
+        var query = event.target.innerText;
+        if ((query.indexOf(" ")) > -1) {
+            query = query.replace(/\s/g, "_")
+        }
+        if ((query.indexOf("'")) > -1) {
+            query = query.replace(/\'/g, "")
+        }
+        API.getDirections(query)
+        .then(res => {
+            console.log(res.data)
+            this.setState({
+                results: res.data
+            })
         })
     }
 
@@ -62,7 +79,8 @@ class Home extends Component {
                 searchInput = {this.state.searchInput}
                 handleChange = {this.handleChange}
                 validateForm = {this.validateForm}/>
-                <PresetChoices/>
+                <PresetChoices
+                presetSubmit = {this.presetSubmit}/>
                 <div>
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Results 

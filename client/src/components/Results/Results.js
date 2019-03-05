@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
-
 import "./Results.css";
-
 
 class Results extends Component {
 

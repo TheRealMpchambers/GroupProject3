@@ -7,13 +7,13 @@
 		"dirThree": "Your destination is the first door on the left"
 	},
 	{
-		"destination": "Men’s_restroom",
+		"destination": "Mens_restroom",
 		"map": "https://i.imgur.com/9nbfEGv.png",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Your destination is the first door on the right"
 	},
 	{
-		"destination": "Women’s_restroom",
+		"destination": "Womens_restroom",
 		"map": "https://i.imgur.com/L4qSar6.png",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Take a right inside the doors",
