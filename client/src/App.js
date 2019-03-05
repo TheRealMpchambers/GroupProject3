@@ -14,15 +14,15 @@ import Home from "./components/Home";
 
 class App extends Component {
 
-  componentDidMount() {
-    this.loadData();
-  }
+//   componentDidMount() {
+//     this.loadData();
+//   }
 
-  loadData = () => {
-    API.getDirections()
-    .then(res => console.log(res))
-    .catch(err => console.log(err))
-};
+//   loadData = () => {
+//     API.getDirections()
+//     .then(res => console.log(res))
+//     .catch(err => console.log(err))
+// };
 
   render() {
     return (

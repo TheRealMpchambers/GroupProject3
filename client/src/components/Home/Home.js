@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Home.css";
+import Header1 from "../Header1/Header1";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
 import Login from "../Login/Login";
@@ -55,12 +56,7 @@ class Home extends Component {
 
         return (
             <div className="App">
-                <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <p class="lead">Hey there!</p>
-                    <p class="lead">Let's get you where you need to go.</p>
-                </div>
-                </div>
+                <Header1/>
                 <RoomSearch 
                 handleSubmit = {this.handleSubmit}
                 searchInput = {this.state.searchInput}
