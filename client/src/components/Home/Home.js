@@ -3,6 +3,7 @@ import "./Home.css";
 import Header1 from "../Header1/Header1";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
+import Login from "../Login/Login";
 import PresetChoices from "../PresetChoices/PresetChoices";
 import API from '../../utils/API';
 
@@ -73,7 +74,7 @@ class Home extends Component {
 
         return (
             <div className="App">
-                <Header1/>
+                <Header1 />
                 <RoomSearch 
                 handleSubmit = {this.handleSubmit}
                 searchInput = {this.state.searchInput}
