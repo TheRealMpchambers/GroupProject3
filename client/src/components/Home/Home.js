@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Home.css";
+import Header1 from "../Header1/Header1";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
 import Login from "../Login/Login";
@@ -55,12 +56,7 @@ class Home extends Component {
 
         return (
             <div className="App">
-                <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <p class="lead">Hey there!</p>
-                    <p class="lead">Let's get you where you need to go.</p>
-                </div>
-                </div>
+                <Header1/>
                 <RoomSearch 
                 handleSubmit = {this.handleSubmit}
                 searchInput = {this.state.searchInput}
@@ -68,6 +64,7 @@ class Home extends Component {
                 validateForm = {this.validateForm}/>
                 <PresetChoices/>
                 <div>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
                 map = {this.state.results !== "" ? this.state.results.map : null}
@@ -76,6 +73,7 @@ class Home extends Component {
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
                 dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Login />
             </div>
         );
