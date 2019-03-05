@@ -48,6 +48,24 @@ class Home extends Component {
         })
     }
 
+    presetSubmit = event => {
+        event.preventDefault();
+        var query = event.target.innerText;
+        if ((query.indexOf(" ")) > -1) {
+            query = query.replace(/\s/g, "_")
+        }
+        if ((query.indexOf("'")) > -1) {
+            query = query.replace(/\'/g, "")
+        }
+        API.getDirections(query)
+        .then(res => {
+            console.log(res.data)
+            this.setState({
+                results: res.data
+            })
+        })
+    }
+
     componentDidUpdate() {
         console.log(this.state)
     }
@@ -56,13 +74,14 @@ class Home extends Component {
 
         return (
             <div className="App">
-                <Header1/>
+                <Header1 />
                 <RoomSearch 
                 handleSubmit = {this.handleSubmit}
                 searchInput = {this.state.searchInput}
                 handleChange = {this.handleChange}
                 validateForm = {this.validateForm}/>
-                <PresetChoices/>
+                <PresetChoices
+                presetSubmit = {this.presetSubmit}/>
                 <div>
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <Results 
