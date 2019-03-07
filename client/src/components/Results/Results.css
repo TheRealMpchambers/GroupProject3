@@ -19,4 +19,81 @@
   margin-bottom: 20px;
 }
 
+.resultsDropdown {
+  width: 95%;
+  border: solid 1px #640212 !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 15px;
+  color: #640212;  
+  margin-bottom: 12px;
+  cursor: pointer;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.textInstructions {
+  width: 95%;
+  height: 70px;
+  border: solid 1px #640212 !important;
+  margin: auto;
+  background-color: white;
+  padding: 15px;
+  color: #640212;  
+  margin-bottom: 12px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 80%;
+  transform: rotate(0deg);
+  transition: all .25s ease-in;
+}
+.rotateArrow {
+  transform: rotate(180deg);
+  transition: all .25s ease-out;
+}
+.mapImg {
+  width: 95%;
+  margin-top: 20px;
+}
+.tourContainer {
+  padding: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 478px;
+  margin-bottom: 0px;
+
+}
+.tour {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+.textTitle {
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.dirText {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.dropdownText {
+  text-align: left;
+  padding-left: 10px;
+}
 

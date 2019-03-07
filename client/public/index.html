@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="../src/assets/browsericonlogo.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://i.imgur.com/mXVzhKc.png" type="image/x-icon"/>
   <title>QRmap</title>
 </head>
 
@@ -45,6 +45,26 @@
 $('.icon').click (function(){
   $(this).toggleClass('open');
   $('.collapse').collapse();
+});
+
+$('.mapCollapseDiv').click (function(event){
+  $('.collapse').collapse();
+});
+
+$('.vrCollapseDiv').click (function(event){
+  $('.collapse').collapse();
+});
+
+$(".directionDropdown").click(function(){
+$(".arrow1").toggleClass("rotateArrow")
+});
+
+$(".vrDropdown").click(function(){
+$(".arrow2").toggleClass("rotateArrow")
+});
+
+$(".textDropdown").click(function(){
+$(".arrow3").toggleClass("rotateArrow")
 });
 </script>
 </html>
