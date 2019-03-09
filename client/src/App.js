@@ -6,13 +6,25 @@ import './App.css';
 import Home from "./components/Home";
 // import Login from "./components/Login";
 // import Registration from "./components/Registration";
-// import Results from "./components/Results";
+import Results from "./components/Results";
 // import Resultscard from "./components/Resultscard";
 // import RoomSearch from "./components/RoomSearch";
 // import Saved from "./components/Saved";
 // import Savedcard from "./components/Savedcard";
+import Auth from "./components/Authentication/Auth";
+import Callback from "./components/Callback/Callback";
 
 class App extends Component {
+
+  auth = new Auth();
+
+  logout() {
+    this.props.auth.logout();
+  }
+
+  login() {
+    this.props.auth.login();
+  }
 
 //   componentDidMount() {
 //     this.loadData();
@@ -25,12 +37,34 @@ class App extends Component {
 // };
 
   render() {
+
+    const isAuthenticated = this.auth.isAuthenticated;
+
+    let mainComponent = "";
+    switch (this.props.location) {
+      case "":
+        mainComponent = <Home auth={() => this.auth.login()} />;
+        break;
+      case "callback":
+        mainComponent = isAuthenticated() ? <Callback auth={() => {
+          console.log("aaasdffghhj");
+          this.auth.logout();
+        }}/> : <Home />;
+        break;
+      case "results":
+        mainComponent = <Results />;
+        break
+      default:
+        mainComponent = <Home auth={() => this.auth.login()} />;
+    }
+
     return (
       // <div className="App">
       //  <p>testing</p>
       // </div>
       <div>
-      <Home />
+        {mainComponent}
+      {/* <Home /> */}
       </div>
     );
   }
