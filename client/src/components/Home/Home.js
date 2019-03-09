@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import Header1 from "../Header1/Header1";
+import Header2 from "../Header2/Header2";
 import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
 import PresetChoices from "../PresetChoices/PresetChoices";
@@ -83,7 +84,8 @@ class Home extends Component {
                 <PresetChoices
                 presetSubmit = {this.presetSubmit}/>
                 <div>
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <Header2/>
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
                 map = {this.state.results !== "" ? this.state.results.map : null}
@@ -92,7 +94,8 @@ class Home extends Component {
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
                 dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
-                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <Login />
             </div>
         );
     }

@@ -1,0 +1,78 @@
+.jumbotron-fluid {
+    background-color: #640212ad !important;
+    padding-top: 0px;
+}
+.lead {
+    color: white;
+}
+.leadTop {
+    padding-top: 40px;
+}
+.menuLinks {
+    color: white;
+    font-size: 32px;
+    padding-right: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid 1px white;
+}
+.menuLinks:hover {
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    background-color: #985960;
+}
+.icon {
+    cursor: pointer;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    transition: all 0.25s;
+  }
+  
+  .iconTop,
+  .iconBottom {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    width: 28px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.25s;
+  }
+  
+  
+  .iconTop {
+    top: 23px;
+    transform: translateY(-3px);
+  }
+  
+  .iconBottom {
+    bottom: 23px;
+    transform: translateY(3px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+  }
+  
+  .open .iconTop {
+    transform: 
+      rotate(45deg) 
+      translateY(3px);
+  }
+  
+  .open .iconBottom {
+    transform: 
+      rotate(-45deg) 
+      translateY(-3px);
+  } 
