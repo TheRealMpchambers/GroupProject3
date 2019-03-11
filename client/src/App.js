@@ -13,6 +13,7 @@ import Results from "./components/Results";
 // import Savedcard from "./components/Savedcard";
 import Auth from "./components/Authentication/Auth";
 import Callback from "./components/Callback/Callback";
+import Homes from "./components/Homes2/Homes";
 
 class App extends Component {
 
@@ -47,12 +48,11 @@ class App extends Component {
         break;
       case "callback":
         mainComponent = isAuthenticated() ? <Callback auth={() => {
-          console.log("aaasdffghhj");
           this.auth.logout();
         }}/> : <Home />;
         break;
       case "results":
-        mainComponent = <Results />;
+        mainComponent = <Homes />;
         break
       default:
         mainComponent = <Home auth={() => this.auth.login()} />;

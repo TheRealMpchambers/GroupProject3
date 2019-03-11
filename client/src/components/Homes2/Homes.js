@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import "./Home.css";
-import Header1 from "../Header1/Header1";
 import Header2 from "../Header2/Header2";
-import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
-import PresetChoices from "../PresetChoices/PresetChoices";
 import API from '../../utils/API';
 
-class Home extends Component {
+class Homes extends Component {
 
     constructor(props) {
         super(props);
@@ -74,17 +71,7 @@ class Home extends Component {
 
         return (
             <div className="App">
-                <Header1 />
-                <button onClick={this.props.auth}>Admin Login</button>
-                <RoomSearch 
-                handleSubmit = {this.handleSubmit}
-                searchInput = {this.state.searchInput}
-                handleChange = {this.handleChange}
-                validateForm = {this.validateForm}/>
-                <PresetChoices
-                presetSubmit = {this.presetSubmit}/>
                 <div>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
                 <Header2/>
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
@@ -100,4 +87,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Homes;
