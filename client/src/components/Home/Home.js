@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import "./Home.css";
 import Header1 from "../Header1/Header1";
-import Header2 from "../Header2/Header2";
+// import Header2 from "../Header2/Header2";
 import RoomSearch from "../RoomSearch/RoomSearch";
-import Results from "../Results/Results";
-import Login from "../Login/Login";
+// import Results from "../Results/Results";
+// import Login from "../Login/Login";
 import PresetChoices from "../PresetChoices/PresetChoices";
 import API from '../../utils/API';
+import { withRouter } from "react-router";
 // import FormModal from "../Modal/Modal"
 
 class Home extends Component {
@@ -92,6 +93,7 @@ class Home extends Component {
                 results: res.data
             })
         })
+        this.props.history.push("/resultspage");
     }
 
     componentDidUpdate() {
@@ -110,8 +112,7 @@ class Home extends Component {
                 validateForm = {this.validateForm}/>
                 <PresetChoices
                 presetSubmit = {this.presetSubmit}/>
-                <div>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
+                {/* <div>
                 <Header2/>
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
@@ -122,11 +123,10 @@ class Home extends Component {
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
                 dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
-                <Login />
+                <Login /> */}
             </div>
         );
     }
 }
 
-export default Home;
+export default withRouter(Home);

@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl } from 'react-bootstrap';
+import { withRouter } from "react-router";
 import "./RoomSearch.css";
 
 class RoomSearch extends Component {
-    
+    redirect = () => {
+        console.log("asdf");
+        this.props.history.push('/results');
+    }
+
     render () {
         return(
                     <div className="jumbotron jumbotronsearch searchCard">
@@ -20,7 +25,6 @@ class RoomSearch extends Component {
                                         <Button
                                             className="enterButton"
                                             block
-                                            bsSize="large"
                                             disabled={!this.props.validateForm}
                                             type="submit"
                                         >
@@ -34,4 +38,4 @@ class RoomSearch extends Component {
     }
 }
 
-export default RoomSearch;
+export default withRouter(RoomSearch);

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./PresetChoices.css";
+import { withRouter } from "react-router";
 
 class PresetChoices extends Component {
     render() {
@@ -17,4 +18,4 @@ class PresetChoices extends Component {
     }   
 }
 
-export default PresetChoices;
+export default withRouter(PresetChoices);
