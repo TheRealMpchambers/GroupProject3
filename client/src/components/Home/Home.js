@@ -89,6 +89,7 @@ class Home extends Component {
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
                 map = {this.state.results !== "" ? this.state.results.map : null}
+                tour = {this.state.results !== "" ? this.state.results.tour : null}
                 dirOne = {this.state.results !== "" ? this.state.results.dirOne : null}
                 dirTwo = {this.state.results !== "" ? this.state.results.dirTwo : null}
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
