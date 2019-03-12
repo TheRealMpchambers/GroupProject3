@@ -5,6 +5,7 @@ import Auth from "../Authentication/Auth";
 import Header1 from "../Header1/Header1";
 import Results from "../Results/Results";
 import API from '../../utils/API';
+import Header2 from "../Header2/Header2";
 
 export default class Callback extends Component {
     constructor(props) {
@@ -87,6 +88,7 @@ export default class Callback extends Component {
                     presetSubmit={this.presetSubmit} />
                 <div>
                     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                    <Header2 />
                     <Results
                         destination={this.state.results !== "" ? this.state.results.destination : null}
                         map={this.state.results !== "" ? this.state.results.map : null}

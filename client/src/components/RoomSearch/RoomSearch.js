@@ -1,10 +1,18 @@
+/* eslint no-restricted-globals: 0 */
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl } from 'react-bootstrap';
+import { withRouter } from "react-router";
 import "./RoomSearch.css";
 
+
+
 class RoomSearch extends Component {
-    
+    redirect = () => {
+        console.log("asdf");
+        this.props.history.push('/Homes');
+    } 
     render () {
+
         return(
                     <div className="jumbotron jumbotronsearch searchCard">
                     <h1 className="title1">Search by room number</h1>
@@ -23,6 +31,7 @@ class RoomSearch extends Component {
                                             bsSize="large"
                                             disabled={!this.props.validateForm}
                                             type="submit"
+                                            onClick={this.redirect}
                                         >
                                         Enter
                                         </Button>
@@ -34,4 +43,4 @@ class RoomSearch extends Component {
     }
 }
 
-export default RoomSearch;
+export default withRouter(RoomSearch);

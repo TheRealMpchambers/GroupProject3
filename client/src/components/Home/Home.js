@@ -6,6 +6,7 @@ import RoomSearch from "../RoomSearch/RoomSearch";
 import Results from "../Results/Results";
 import PresetChoices from "../PresetChoices/PresetChoices";
 import API from '../../utils/API';
+import { withRouter } from "react-router";
 
 class Home extends Component {
 
@@ -46,6 +47,7 @@ class Home extends Component {
             this.setState({
                 results: res.data})
         })
+
     }
 
     presetSubmit = event => {
@@ -64,6 +66,7 @@ class Home extends Component {
                 results: res.data
             })
         })
+        this.props.history.push("/Homes");
     }
 
     componentDidUpdate() {
@@ -83,7 +86,7 @@ class Home extends Component {
                 validateForm = {this.validateForm}/>
                 <PresetChoices
                 presetSubmit = {this.presetSubmit}/>
-                <div>
+                {/* <div>
                 <br></br><br></br><br></br><br></br><br></br><br></br>
                 <Header2/>
                 <Results 
@@ -94,10 +97,10 @@ class Home extends Component {
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
                 dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br><br></br><br></br> */}
             </div>
         );
     }
 }
 
-export default Home;
+export default withRouter(Home);
