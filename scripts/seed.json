@@ -2,6 +2,7 @@
 	{
 		"destination": "Room_32",
 		"map": "https://i.imgur.com/QXHSWtC.png",
+		"interactive": "https://poly.google.com/view/70BjwBf6Q2F/embed?chrome=min",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Walk down the stairs ",
 		"dirThree": "Your destination is the first door on the left"
@@ -9,12 +10,14 @@
 	{
 		"destination": "Mens_restroom",
 		"map": "https://i.imgur.com/9nbfEGv.png",
+		"interactive": "https://poly.google.com/view/70BjwBf6Q2F/embed?chrome=min",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Your destination is the first door on the right"
 	},
 	{
 		"destination": "Womens_restroom",
 		"map": "https://i.imgur.com/L4qSar6.png",
+		"interactive": "https://poly.google.com/view/70BjwBf6Q2F/embed?chrome=min",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Take a right inside the doors",
 		"dirThree": "Your destination is left of the stairs at the end of the hallway"
@@ -22,12 +25,14 @@
 	{
 		"destination": "Room_83",
 		"map": "https://i.imgur.com/TMexXIA.png",
+		"interactive": "https://poly.google.com/view/5iGAV-paIfh/embed?chrome=min",
 		"dirOne": "Turn left at the second set of doors down the hallway",
 		"dirTwo": "Your destination is inside the door on the right"
 	},
 	{
 		"destination": "Vending_machines",
 		"map": "https://i.imgur.com/hOQwy0Y.png",
+		"interactive": "https://poly.google.com/view/c_EmACPOOBY/embed?chrome=min",
 		"dirOne": "Turn left at the second set of doors down the hallway",
 		"dirTwo": "Walk down the ramp inside the doors",
 		"dirThree": "Your destination is on the right"
@@ -35,6 +40,7 @@
 	{
 		"destination": "Room_62",
 		"map": "https://i.imgur.com/mrKilXT.png",
+		"interactive": "https://poly.google.com/view/c_EmACPOOBY/embed?chrome=min",
 		"dirOne": "Turn left at the second set of doors down the hallway",
 		"dirTwo": "Walk down the ramp inside the doors",
 		"dirThree": "Your destination is on the right"
@@ -42,6 +48,7 @@
 	{
 		"destination": "Room_55",
 		"map": "https://i.imgur.com/NPDDwV3.png",
+		"interactive": "https://poly.google.com/view/5zN7QEtqD43/embed?chrome=min",
 		"dirOne": "Turn left at the second set of doors down the hallway",
 		"dirTwo": "Walk down the ramp inside the doors",
 		"dirThree": "Continue down the hallway",
@@ -50,6 +57,7 @@
 	{
 		"destination": "Room_52",
 		"map": "https://i.imgur.com/vRGyvUA.png",
+		"interactive": "https://poly.google.com/view/5zN7QEtqD43/embed?chrome=min",
 		"dirOne": "Turn left at the second set of doors down the hallway",
 		"dirTwo": "Walk down the ramp inside the doors",
 		"dirThree": "Continue down the hallway",
@@ -58,6 +66,7 @@
 	{
 		"destination": "Room_42A",
 		"map": "https://i.imgur.com/vhuWuIg.png",
+		"interactive": "https://poly.google.com/view/1AscxsLkPY8/embed?chrome=min",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Walk down the stairs and continue down the hallway",
 		"dirThree": "Turn left at the end of the hallway ",
@@ -66,6 +75,7 @@
 	{
 		"destination": "Room_42B",
 		"map": "https://i.imgur.com/eMtMew0.png",
+		"interactive": "https://poly.google.com/view/1AscxsLkPY8/embed?chrome=min",
 		"dirOne": "Turn left at the first set of doors down the hallway",
 		"dirTwo": "Walk down the stairs and continue down the hallway",
 		"dirThree": "Turn left at the end of the hallway ",
@@ -74,6 +84,7 @@
 	{
 		"destination": "Room_77",
 		"map": "https://i.imgur.com/XD3qygk.png",
+		"interactive": "https://poly.google.com/view/5iGAV-paIfh/embed?chrome=min",
 		"dirOne": "Turn left at the second set of doors down the hallway",
 		"dirTwo": "Your destination is directly right inside the door"
 	}
