@@ -111,7 +111,6 @@ class Home extends Component {
                 <PresetChoices
                 presetSubmit = {this.presetSubmit}/>
                 <div>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
                 <Header2/>
                 <Results 
                 destination ={this.state.results !== "" ? this.state.results.destination : null}
@@ -122,8 +121,6 @@ class Home extends Component {
                 dirThree = {this.state.results !== "" ? this.state.results.dirThree : null}
                 dirFour = {this.state.results !== "" ? this.state.results.dirFour : null}/>
                 </div>
-                <br></br><br></br><br></br><br></br><br></br><br></br>
-                <Login />
             </div>
         );
     }
