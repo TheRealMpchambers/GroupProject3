@@ -6,7 +6,7 @@ import "./RoomSearch.css";
 class RoomSearch extends Component {
     redirect = () => {
         console.log("asdf");
-        this.props.history.push('/results');
+        this.props.history.push('/resultspage');
     }
 
     render () {
@@ -23,10 +23,11 @@ class RoomSearch extends Component {
                                             onChange={this.props.handleChange}
                                         />
                                         <Button
+                                            type="button"
                                             className="enterButton"
                                             block
                                             disabled={!this.props.validateForm}
-                                            type="submit"
+                                            // onClick={this.redirect}
                                         >
                                         Enter
                                         </Button>

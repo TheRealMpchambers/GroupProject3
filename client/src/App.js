@@ -32,10 +32,10 @@ class App extends Component {
       case "callback":
         mainComponent = isAuthenticated() ? <Callback auth={() => {
           this.auth.logout();
-        }} /> : <Home />;
+        }} /> : <Home/>;
         break;
-      case "results":
-        mainComponent = <ResultsPage />;
+      case "resultspage":
+        mainComponent = <ResultsPage/>;
         break
       default:
         mainComponent = <Home auth={() => this.auth.login()} />;
@@ -45,7 +45,7 @@ class App extends Component {
       <Router>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/Results" component={ResultsPage} />
+            <Route exact path="/resultspage" component={ResultsPage} />
             <Route exact path="/Callback" component={Callback} />
             {/* <Route exact path="/NoMatch" component={NoMatch}/> */}
           </Switch>
