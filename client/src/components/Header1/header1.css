@@ -21,6 +21,20 @@
     color: rgb(182, 182, 182);
     cursor: pointer;
 }
+.links {
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  line-break: none;
+}
+.links:hover {
+  color: rgb(182, 182, 182);
+  cursor: pointer;
+  text-decoration: none;
+}
+.linebreak{
+ color: #985960;
+}
 .menu {
     position: absolute;
     top: 40px;

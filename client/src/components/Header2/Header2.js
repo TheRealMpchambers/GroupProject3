@@ -9,11 +9,10 @@ function Header1() {
             <span className="iconBottom"></span>
         </div>
         <div className="collapse multi-collapse menu" id="multiCollapseExample2">
-            <p className="menuLinks">Placeholder</p>
-            <p className="menuLinks">Placeholder</p>
-            <p className="menuLinks">Placeholder</p>
-            <p className="menuLinks">Placeholder</p>
-            <p className="menuLinks">Placeholder</p>
+            <a className="links" href="https://qrmap.herokuapp.com/"><p className="menuLinks">Home</p></a>
+            <a className="links" href="https://github.com/TheRealMpchambers/GroupProject3"><p className="menuLinks">Source<span className="linebreak">_</span>Code</p></a>
+            <p className="menuLinks"><a className="links" href="#">Contact<span className="linebreak">_</span>Us</a></p>
+            <p className="menuLinks"><a className="links" href="#">Login</a></p>
         </div>
         <div className="container">
             <p className="lead leadTop">All right,</p>
