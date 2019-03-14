@@ -42,18 +42,30 @@
     -->
 </body>
 <script>
+$(".resultsPage").hide();
+
 $('.icon').click (function(){
   $(this).toggleClass('open');
-  $('.collapse').collapse();
+  // $('.collapse').collapse();
 });
 
-$('.mapCollapseDiv').click (function(event){
-  $('.collapse').collapse();
+// $('.mapCollapseDiv').click (function(event){
+//   $('.collapse').collapse();
+// });
+
+// $('.vrCollapseDiv').click (function(event){
+//   $('.collapse').collapse();
+// });
+$(".presetButton").click(function(){
+  $(".resultsPage").show();
+  $(".homePage").hide();
 });
 
-$('.vrCollapseDiv').click (function(event){
-  $('.collapse').collapse();
+$(".enterButton").click(function(){
+  $(".resultsPage").show();
+  $(".homePage").hide();
 });
+
 
 $(".directionDropdown").click(function(){
 $(".arrow1").toggleClass("rotateArrow")

@@ -3,7 +3,7 @@ import "./Header2.css";
 
 function Header1() {
     return (
-        <div className="jumbotron jumbotron-fluid">
+        <div className="jumbotron jumbotron-fluid resultsPage">
         <div className="icon" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
             <span className="iconTop"></span>
             <span className="iconBottom"></span>

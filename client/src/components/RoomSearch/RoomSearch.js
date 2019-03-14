@@ -6,7 +6,7 @@ class RoomSearch extends Component {
     
     render () {
         return(
-                    <div className="jumbotron jumbotronsearch searchCard">
+                    <div className="jumbotron jumbotronsearch searchCard homePage">
                     <h1 className="title1">Search by room number</h1>
                             <form autoComplete="off" className="form" onSubmit={this.props.handleSubmit}>
                                 <FormGroup controlId="searchInput" bsSize="large">

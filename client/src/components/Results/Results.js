@@ -6,7 +6,7 @@ class Results extends Component {
 
     render () {
         return(
-            <div>
+            <div className="resultsPage">
                 <h6 className="grayText textTitle">Direction Options</h6>
                 <div className="jumbotron resultsDropdown directionDropdown" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
                     <img src="https://i.imgur.com/nmGAup1.png" className="arrow arrow1" alt="arrow"/>Map to Destination
