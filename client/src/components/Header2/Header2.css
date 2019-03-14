@@ -28,6 +28,7 @@
     left: 0;
     min-height: 100%;
     background-color: #985960;
+    z-index: 9999;
 }
 .icon {
     cursor: pointer;
@@ -36,7 +37,21 @@
     height: 52px;
     transition: all 0.25s;
   }
-  
+
+  .links {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    line-break: none;
+  }
+  .links:hover {
+    color: rgb(182, 182, 182);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .linebreak{
+   color: #985960;
+  }
   .iconTop,
   .iconBottom {
     content: '';
