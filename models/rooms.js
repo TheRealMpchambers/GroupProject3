@@ -5,6 +5,7 @@ const roomSchema = new Schema({
     destination: {type: String, required: true},
     floor: {type: Number},
     map: {type: String, required: true},
+    interactive: {type: String, required: true},
     dirOne: {type: String},
     dirTwo: {type: String},
     dirThree: {type: String},

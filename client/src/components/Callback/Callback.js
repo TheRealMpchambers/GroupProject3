@@ -78,7 +78,7 @@ export default class Callback extends Component {
         return (
             <div className="App">
                 <Header1 />
-                <button onClick={this.props.auth}>Log Out</button>
+                <button onClick={() => this.props.auth()}>Log Out</button>
                 <RoomSearch
                     handleSubmit={this.handleSubmit}
                     searchInput={this.state.searchInput}

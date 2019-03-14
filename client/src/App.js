@@ -13,41 +13,43 @@ class App extends Component {
 
   auth = new Auth();
 
-  logout() {
-    this.props.auth.logout();
+  logout(props) {
+    this.auth.logout();
   }
 
   login() {
-    this.props.auth.login();
+    console.log("Cusswords")
+    console.log(this);
+    this.auth.login();
   }
 
   render() {
 
-    const isAuthenticated = this.auth.isAuthenticated;
+    // const  isAuthenticated = this.auth.isAuthenticated;
 
-    let mainComponent = "";
-    switch (this.props.location) {
-      case "":
-        mainComponent = <Home auth={() => this.auth.login()} />;
-        break;
-      case "callback":
-        mainComponent = isAuthenticated() ? <Callback auth={() => {
-          this.auth.logout();
-        }} /> : <Home />;
-        break;
-      case "results":
-        mainComponent = <Homes />;
-        break
-      default:
-        mainComponent = <Home auth={() => this.auth.login()} />;
-    }
+    // let mainComponent = "";
+    // switch (this.props.location) {
+    //   case "":
+    //     mainComponent = <Home auth={() => this.auth.login()} />;
+    //     break;
+    //   case "callback":
+    //     mainComponent = isAuthenticated() ? <Callback auth={() => {
+    //       this.auth.logout();
+    //     }} /> : <Home />;
+    //     break;
+    //   case "results":
+    //     mainComponent = <Homes />;
+    //     break
+    //   default:
+    //     mainComponent = <Home auth={() => this.auth.login()} />;
+    // }
 
     return (
       <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" render={() => <Home auth={this.auth.login}/>} />
             <Route exact path="/Homes" component={Homes} />
-            <Route exact path="/Callback" component={Callback} />
+            <Route exact path="/Callback" render={() => <Callback auth={this.auth.logout}/>} />
             <Route exact path="/NoMatch" component={NoMatch}/>
           </Switch>
       </Router>

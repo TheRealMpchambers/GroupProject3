@@ -3,7 +3,7 @@ import auth0 from 'auth0-js';
 import React, { Component } from "react";
 import history from "./history";
 
-const LOGOUT = "/home";
+const LOGOUT = "/";
 
 export default class Auth extends Component {
   accessToken;
@@ -86,7 +86,7 @@ export default class Auth extends Component {
     console.log("stuffs");
     console.log(this.expiresAt);
     return true;
-    //return new Date().getTime() < this.expiresAt;
+    // return new Date().getTime() < this.expiresAt;
   }
 
   logout() {
@@ -98,9 +98,9 @@ export default class Auth extends Component {
     localStorage.removeItem('isLoggedIn');
 
     // navigate to the home route
-    history.replace('/home');
+    history.replace('/');
     location.pathname = LOGOUT;
   }
-
 }
+
 
