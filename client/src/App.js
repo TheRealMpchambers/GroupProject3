@@ -10,6 +10,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
 
+  state = {
+    mainComponent: ""
+  }
+
   auth = new Auth();
 
   logout() {
@@ -24,29 +28,29 @@ class App extends Component {
 
     const isAuthenticated = this.auth.isAuthenticated;
 
-    let mainComponent = '';
+    // let mainComponent = '';
     switch (this.props.location) {
       case "":
-        mainComponent = <Home auth={() => this.auth.login()} />;
+        this.state.mainComponent = <Home auth={() => this.auth.login()} />;
         break;
       case "callback":
-        mainComponent = isAuthenticated() ? <Callback auth={() => {
+      this.state.mainComponent = isAuthenticated() ? <Callback auth={() => {
           this.auth.logout();
         }} /> : <Home />;
         break;
       case "results":
-        mainComponent = <ResultsPage />;
+      this.state.mainComponent = <ResultsPage />;
         break
       default:
-        mainComponent = <Home auth={() => this.auth.login()} />;
+      this.state.mainComponent = <Home auth={() => this.auth.login()} />;
     }
 
     return (
       <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/Results" component={ResultsPage} />
-            <Route exact path="/Callback" component={Callback} />
+            <Route exact path="/" component={this.state.mainComponent} />
+            <Route exact path="/Results" component={this.state.maincomponent} />
+            <Route exact path="/Callback" component={this.state.maincomponent} />
             {/* <Route exact path="/NoMatch" component={NoMatch}/> */}
           </Switch>
       </Router>
