@@ -42,41 +42,43 @@ class Home extends Component {
         });
     }
     
-    // handleSubmit = event => {
-    //     event.preventDefault();
-    //     console.log(this.state.searchInput);
-    //     var query = this.state.searchInput;
-    //     if ((query.indexOf(" ")) > -1) {
-    //         query = query.replace(/\s/g, "_")
-    //     };
-    //     if (query === "Room_32" || query === "room_32" || query === "32") {
-    //         query = "Room_32";
-    //     } else if (query === "Room_83" || query === "room_83" || query === "83") {
-    //         query = "Room_83";
-    //     } else if (query === "Room_62" || query === "room_62" || query === "62") {
-    //         query = "Room_62";
-    //     } else if (query === "Room_55" || query === "room_55" || query === "55") {
-    //         query = "Room_55";
-    //     } else if (query === "Room_52" || query === "room_52" || query === "52") {
-    //         query = "Room_52";
-    //     } else if (query === "Room_42A" || query === "Room_42a" || query === "room_42a" || query === "room_42A" || query === "42A" || query === "42a") {
-    //         query = "Room_42A";
-    //     } else if (query === "Room_42B" || query === "Room_42b" || query === "room_42b" || query === "room_42B" || query === "42b" || query === "42b") {
-    //         query = "Room_42B";
-    //     } else if (query === "Room_77" || query === "room_77" || query === "77") {
-    //         query = "Room_77";
-    //     } else {
-    //         alert("Please enter a valid room number")
-    //         return false;
-    //     };
-    //     console.log("The query is " + query);
-    //     API.getDirections(query)
-    //     .then(res => {
-    //         this.setState({
-    //             results: res.data})
-    //     })
+    handleSubmit = event => {
+        event.preventDefault();
+        console.log(this.state.searchInput);
+        var query = this.state.searchInput;
+        if ((query.indexOf(" ")) > -1) {
+            query = query.replace(/\s/g, "_")
+        };
+        if (query === "Room_32" || query === "room_32" || query === "32") {
+            query = "Room_32";
+        } else if (query === "Room_83" || query === "room_83" || query === "83") {
+            query = "Room_83";
+        } else if (query === "Room_62" || query === "room_62" || query === "62") {
+            query = "Room_62";
+        } else if (query === "Room_55" || query === "room_55" || query === "55") {
+            query = "Room_55";
+        } else if (query === "Room_52" || query === "room_52" || query === "52") {
+            query = "Room_52";
+        } else if (query === "Room_42A" || query === "Room_42a" || query === "room_42a" || query === "room_42A" || query === "42A" || query === "42a") {
+            query = "Room_42A";
+        } else if (query === "Room_42B" || query === "Room_42b" || query === "room_42b" || query === "room_42B" || query === "42b" || query === "42b") {
+            query = "Room_42B";
+        } else if (query === "Room_77" || query === "room_77" || query === "77") {
+            query = "Room_77";
+        } else {
+            alert("Please enter a valid room number")
+            return false;
+        };
+        console.log("The query is " + query);
+        API.getDirections(query)
+        .then(res => {
+            this.setState({
+                results: res.data})
+                console.log("asdf");
+                this.props.history.push('/resultspage');
+        })
 
-    // }
+    }
 
     presetSubmit = event => {
         event.preventDefault();

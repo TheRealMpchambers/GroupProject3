@@ -13,7 +13,7 @@ class RoomSearch extends Component {
         return(
                     <div className="jumbotron jumbotronsearch searchCard">
                     <h1 className="title1">Search by room number</h1>
-                            <form autoComplete="off" className="form" onSubmit={this.props.handleSubmit}>
+                            <form autoComplete="off" className="form" onClick={this.props.handleSubmit}>
                                 <FormGroup controlId="searchInput" bsSize="large">
                                     <div className="inputDiv">
                                         <FormControl
@@ -27,7 +27,6 @@ class RoomSearch extends Component {
                                             className="enterButton"
                                             block
                                             disabled={!this.props.validateForm}
-                                            // onClick={this.redirect}
                                         >
                                         Enter
                                         </Button>

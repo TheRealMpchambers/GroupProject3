@@ -34,7 +34,7 @@ class App extends Component {
           this.auth.logout();
         }} /> : <Home/>;
         break;
-      case "resultspage":
+      case "results":
         mainComponent = <ResultsPage/>;
         break
       default:
