@@ -8,7 +8,10 @@ export default {
 
     saveDirections: function(directions) {
         return axios.post("/api/rooms", directions)
-    }
+    },
 
+    saveSurvey: function(survey) {
+    		return axios.post("/api/rooms/survey");
+    }
 };
 
