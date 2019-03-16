@@ -4,11 +4,24 @@ import { render } from 'react-dom';
 import * as Survey from 'survey-react';
 import 'survey-react/survey.css';
 
-class App extends Component {
+class UserSurvey extends Component {
+
+  // constructor(props) {
+  //   super(props)
+
+  //  this.state = {
+  //    survey: ""
+  //  } 
+  // }
+
   componentWillMount() {    
     Survey.Survey.cssType = "bootstrap";
     Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
   }
+
+  // componentDidUpdate() {
+  //   console.log(this.state)
+  // }
 
   render() {    
     var json = { title: "Product Feedback Survey Example", showProgressBar: "top", pages: [
@@ -36,11 +49,18 @@ class App extends Component {
         ]}
     ]};
 
-    var model = new Survey.Model(json);    
+    var model = new Survey.Model(json);  
+    
+    
     return (
-      <Survey.Survey model={model}/>
+      
+      <Survey.Survey model={model} />
+     
     );
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<UserSurvey />, document.getElementById('root'));
+
+export default UserSurvey;
+

@@ -4,6 +4,8 @@ import './App.css';
 
 // import ContactUs from "./components/ContactUs";
 import Home from "./components/Home";
+import Survey from "./components/Survey";
+
 // import Login from "./components/Login";
 // import Registration from "./components/Registration";
 // import Results from "./components/Results";
@@ -30,7 +32,8 @@ class App extends Component {
       //  <p>testing</p>
       // </div>
       <div>
-      <Home />
+       <Home /> 
+      <Survey />
       </div>
     );
   }
